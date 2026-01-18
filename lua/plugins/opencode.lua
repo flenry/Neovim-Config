@@ -32,7 +32,7 @@ return {
         -- Refresh Neo-tree if it's open
         local ok, _ = pcall(require, 'neo-tree')
         if ok then
-          require('neo-tree.sources.manager').refresh('filesystem')
+          require('neo-tree.sources.manager').refresh 'filesystem'
         end
       end,
     })
@@ -43,7 +43,7 @@ return {
       callback = function()
         local ok, _ = pcall(require, 'neo-tree')
         if ok then
-          require('neo-tree.sources.manager').refresh('filesystem')
+          require('neo-tree.sources.manager').refresh 'filesystem'
         end
       end,
     })
